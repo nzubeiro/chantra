@@ -10,6 +10,11 @@ path = 'contracts/content.clar'
 clarity_version = 2
 epoch = 2.5
 
+[contracts.feea]
+path = 'contracts/feea.clar'
+clarity_version = 2
+epoch = 2.5
+
 [contracts.personalized]
 path = 'contracts/personalized.clar'
 clarity_version = 2
