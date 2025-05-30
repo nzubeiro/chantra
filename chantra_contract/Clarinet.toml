@@ -24,6 +24,11 @@ epoch = 2.5
 path = 'contracts/privacy.clar'
 clarity_version = 2
 epoch = 2.5
+
+[contracts.research_fund]
+path = 'contracts/research_fund.clar'
+clarity_version = 2
+epoch = 2.5
 [repl.analysis]
 passes = ['check_checker']
 
