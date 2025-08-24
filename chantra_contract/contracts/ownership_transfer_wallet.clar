@@ -188,3 +188,15 @@
   )
 )
 
+;; Owner-only function example
+;; This demonstrates how other functions can use the ownership check
+(define-public (owner-only-function)
+  (begin
+    ;; Check if caller is the current owner
+    (asserts! (is-eq tx-sender (var-get current-owner)) ERR_UNAUTHORIZED)
+    
+    ;; Your owner-only logic here
+    (print { event: "owner-only-function-called", caller: tx-sender })
+    (ok "Function executed successfully")
+  )
+)
